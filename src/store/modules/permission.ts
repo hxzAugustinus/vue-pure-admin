@@ -56,7 +56,8 @@ export const usePermissionStore = defineStore({
       this.wholeMenus = [];
       this.cachePageList = [];
     }
-  }
+  },
+  persist: true
 });
 
 export function usePermissionStoreHook() {

@@ -109,6 +109,7 @@ router.beforeEach((to: ToRouteType, _from, next) => {
       handleAliveRoute(to);
     }
   }
+  console.log(usePermissionStoreHook().constantMenus);
   const userInfo = storageSession().getItem<DataInfo<number>>(sessionKey);
   NProgress.start();
   const externalLink = isUrl(to?.name as string);
